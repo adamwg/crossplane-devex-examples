@@ -1,0 +1,8 @@
+apiVersion: platform.example.com/v1alpha1
+kind: StorageBucket
+metadata:
+  name: example
+spec:
+  acl: private
+  region: us-west-1
+  versioning: true

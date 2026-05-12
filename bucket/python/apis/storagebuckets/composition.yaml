@@ -1,0 +1,16 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: Composition
+metadata:
+  name: storagebuckets.platform.example.com
+spec:
+  compositeTypeRef:
+    apiVersion: platform.example.com/v1alpha1
+    kind: StorageBucket
+  mode: Pipeline
+  pipeline:
+  - functionRef:
+      name: my-org-example-project-bucketcompose-bucket
+    step: compose-bucket
+  - functionRef:
+      name: crossplane-contrib-function-auto-ready
+    step: crossplane-contrib-function-auto-ready

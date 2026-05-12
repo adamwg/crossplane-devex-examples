@@ -1,0 +1,36 @@
+apiVersion: apiextensions.crossplane.io/v2
+kind: CompositeResourceDefinition
+metadata:
+  name: storagebuckets.platform.example.com
+spec:
+  group: platform.example.com
+  names:
+    categories:
+    - crossplane
+    kind: StorageBucket
+    plural: storagebuckets
+  scope: Cluster
+  versions:
+  - name: v1alpha1
+    referenceable: true
+    schema:
+      openAPIV3Schema:
+        description: StorageBucket is the Schema for the StorageBucket API.
+        properties:
+          spec:
+            description: StorageBucketSpec defines the desired state of StorageBucket.
+            properties:
+              acl:
+                type: string
+              region:
+                type: string
+              versioning:
+                type: boolean
+            type: object
+          status:
+            description: StorageBucketStatus defines the observed state of StorageBucket.
+            type: object
+        required:
+        - spec
+        type: object
+    served: true
