@@ -1,0 +1,1 @@
+{"properties":{"Port":{"type":"integer","format":"int32","description":"Port number of the given endpoint.","default":0}},"additionalProperties":false,"type":"object","required":["Port"],"description":"DaemonEndpoint contains information about a single Daemon endpoint."}

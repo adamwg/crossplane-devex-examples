@@ -1,0 +1,1 @@
+{"properties":{"parentRef":{"allOf":[{"$ref":"io-k8s-api-networking-v1-ParentReference.schema.json"}],"description":"ParentRef references the resource that an IPAddress is attached to. An IPAddress must reference a parent object."}},"additionalProperties":false,"type":"object","required":["parentRef"],"description":"IPAddressSpec describe the attributes in an IP Address."}

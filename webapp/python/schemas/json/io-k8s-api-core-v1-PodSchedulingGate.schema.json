@@ -1,0 +1,1 @@
+{"properties":{"name":{"type":"string","description":"Name of the scheduling gate. Each scheduling gate must have a unique name field.","default":""}},"additionalProperties":false,"type":"object","required":["name"],"description":"PodSchedulingGate is associated to a Pod to guard its scheduling."}

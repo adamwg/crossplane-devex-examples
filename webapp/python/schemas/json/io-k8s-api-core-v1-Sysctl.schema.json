@@ -1,0 +1,1 @@
+{"properties":{"name":{"type":"string","description":"Name of a property to set","default":""},"value":{"type":"string","description":"Value of a property to set","default":""}},"additionalProperties":false,"type":"object","required":["name","value"],"description":"Sysctl defines a kernel parameter to be set"}
