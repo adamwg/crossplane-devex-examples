@@ -1,0 +1,1 @@
+{"properties":{"startedAt":{"allOf":[{"$ref":"io-k8s-apimachinery-pkg-apis-meta-v1-Time.schema.json"}],"description":"Time at which the container was last (re-)started"}},"additionalProperties":false,"type":"object","description":"ContainerStateRunning is a running state of a container."}

@@ -1,0 +1,1 @@
+{"properties":{"replicas":{"type":"integer","format":"int32","description":"replicas is the desired number of instances for the scaled object.","default":0}},"additionalProperties":false,"type":"object","description":"ScaleSpec describes the attributes of a scale subresource."}

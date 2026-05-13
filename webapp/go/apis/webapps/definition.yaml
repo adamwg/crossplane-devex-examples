@@ -1,0 +1,46 @@
+apiVersion: apiextensions.crossplane.io/v2
+kind: CompositeResourceDefinition
+metadata:
+  name: webapps.platform.example.com
+spec:
+  group: platform.example.com
+  names:
+    categories:
+    - crossplane
+    kind: WebApp
+    plural: webapps
+  scope: Namespaced
+  versions:
+  - name: v1alpha1
+    referenceable: true
+    schema:
+      openAPIV3Schema:
+        description: WebApp is the Schema for the WebApp API.
+        properties:
+          spec:
+            properties:
+              image:
+                description: OCI image for the webapp
+                type: string
+              ports:
+                default:
+                - 80
+                description: Ports to expose from the application container
+                items:
+                  type: integer
+                type: array
+              replicas:
+                default: 1
+                description: Number of replicas to run
+                maximum: 100
+                minimum: 1
+                type: integer
+            required:
+            - image
+            type: object
+          status:
+            type: object
+        required:
+        - spec
+        type: object
+    served: true
