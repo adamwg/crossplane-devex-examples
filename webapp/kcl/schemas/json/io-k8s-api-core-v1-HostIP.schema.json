@@ -1,0 +1,1 @@
+{"properties":{"ip":{"type":"string","description":"IP is the IP address assigned to the host","default":""}},"additionalProperties":false,"type":"object","required":["ip"],"description":"HostIP represents a single IP address allocated to the host."}

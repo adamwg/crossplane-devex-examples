@@ -1,0 +1,1 @@
+{"properties":{"required":{"allOf":[{"$ref":"io-k8s-api-core-v1-NodeSelector.schema.json"}],"description":"required specifies hard node constraints that must be met."}},"additionalProperties":false,"type":"object","description":"VolumeNodeAffinity defines constraints that limit what nodes this volume can be accessed from."}

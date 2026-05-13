@@ -1,0 +1,1 @@
+{"properties":{"name":{"type":"string","description":"Name is this DNS resolver option's name. Required."},"value":{"type":"string","description":"Value is this DNS resolver option's value."}},"additionalProperties":false,"type":"object","description":"PodDNSConfigOption defines DNS resolver options of a pod."}

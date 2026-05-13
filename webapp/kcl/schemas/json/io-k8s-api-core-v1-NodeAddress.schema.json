@@ -1,0 +1,1 @@
+{"properties":{"address":{"type":"string","description":"The node address.","default":""},"type":{"type":"string","description":"Node address type, one of Hostname, ExternalIP or InternalIP.","default":""}},"additionalProperties":false,"type":"object","required":["type","address"],"description":"NodeAddress contains information for the node's address."}

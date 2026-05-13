@@ -1,0 +1,1 @@
+{"properties":{"conditionType":{"type":"string","description":"ConditionType refers to a condition in the pod's condition list with matching type.","default":""}},"additionalProperties":false,"type":"object","required":["conditionType"],"description":"PodReadinessGate contains the reference to a pod condition"}

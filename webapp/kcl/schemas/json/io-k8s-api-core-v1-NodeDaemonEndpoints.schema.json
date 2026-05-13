@@ -1,0 +1,1 @@
+{"properties":{"kubeletEndpoint":{"allOf":[{"$ref":"io-k8s-api-core-v1-DaemonEndpoint.schema.json"}],"description":"Endpoint on which Kubelet is listening.","default":{}}},"additionalProperties":false,"type":"object","description":"NodeDaemonEndpoints lists ports opened by daemons running on the Node."}

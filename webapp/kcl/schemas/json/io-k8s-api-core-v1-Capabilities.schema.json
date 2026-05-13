@@ -1,0 +1,1 @@
+{"properties":{"add":{"items":{"type":"string","default":""},"type":"array","description":"Added capabilities"},"drop":{"items":{"type":"string","default":""},"type":"array","description":"Removed capabilities"}},"additionalProperties":false,"type":"object","description":"Adds and removes POSIX capabilities from running containers."}

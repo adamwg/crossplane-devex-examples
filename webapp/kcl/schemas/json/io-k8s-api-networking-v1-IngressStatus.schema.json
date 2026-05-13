@@ -1,0 +1,1 @@
+{"properties":{"loadBalancer":{"allOf":[{"$ref":"io-k8s-api-networking-v1-IngressLoadBalancerStatus.schema.json"}],"description":"loadBalancer contains the current status of the load-balancer.","default":{}}},"additionalProperties":false,"type":"object","description":"IngressStatus describe the current state of the Ingress."}
