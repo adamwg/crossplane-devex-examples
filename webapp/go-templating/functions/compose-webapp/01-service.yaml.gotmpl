@@ -1,0 +1,20 @@
+# code: language=yaml
+# yaml-language-server: $schema=../../schemas/json/index.schema.json
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    gotemplating.fn.crossplane.io/composition-resource-name: service
+  name: {{ $xr.metadata.name }}
+  namespace: {{ $xr.metadata.namespace }}
+spec:
+  selector:
+    app.kubernetes.io/name: {{ $xr.metadata.name }}
+  ports:
+{{- range $p := $xr.spec.ports }}
+  - protocol: TCP
+    port: {{ $p }}
+    targetPort: {{ $p }}
+{{- end }}

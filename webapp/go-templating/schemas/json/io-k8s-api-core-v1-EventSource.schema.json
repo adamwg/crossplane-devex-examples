@@ -1,0 +1,1 @@
+{"properties":{"component":{"type":"string","description":"Component from which the event is generated."},"host":{"type":"string","description":"Node name on which the event is generated."}},"additionalProperties":false,"type":"object","description":"EventSource contains information for an event."}

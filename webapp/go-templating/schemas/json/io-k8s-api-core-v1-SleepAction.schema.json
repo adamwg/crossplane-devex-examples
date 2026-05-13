@@ -1,0 +1,1 @@
+{"properties":{"seconds":{"type":"integer","format":"int64","description":"Seconds is the number of seconds to sleep.","default":0}},"additionalProperties":false,"type":"object","required":["seconds"],"description":"SleepAction describes a \"sleep\" action."}

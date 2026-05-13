@@ -1,0 +1,1 @@
+{"properties":{"limits":{"items":{"allOf":[{"$ref":"io-k8s-api-core-v1-LimitRangeItem.schema.json"}],"default":{}},"type":"array","description":"Limits is the list of LimitRangeItem objects that are enforced."}},"additionalProperties":false,"type":"object","required":["limits"],"description":"LimitRangeSpec defines a min/max usage limit for resources that match on kind."}

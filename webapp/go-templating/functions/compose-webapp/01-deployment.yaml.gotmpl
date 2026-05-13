@@ -1,0 +1,32 @@
+# code: language=yaml
+# yaml-language-server: $schema=../../schemas/json/index.schema.json
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    gotemplating.fn.crossplane.io/composition-resource-name: deployment
+  name: {{ $xr.metadata.name }}
+  namespace: {{ $xr.metadata.namespace }}
+  labels:
+    app.kubernetes.io/name: {{ $xr.metadata.name }}
+spec:
+  replicas: {{ $xr.spec.replicas }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ $xr.metadata.name }}
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{ $xr.metadata.name }}
+    spec:
+      containers:
+      - name: {{ $xr.metadata.name }}
+        image: {{ $xr.spec.image }}
+        imagePullPolicy: Always
+        ports:
+{{- range $p := $xr.spec.ports }}
+        - containerPort: {{ $p }}
+{{- end }}
